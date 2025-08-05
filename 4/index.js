@@ -9,6 +9,7 @@ app.use(express.json());
 const bookRoutes = require("./routes/books");
 app.use("/books", bookRoutes);
 
+// 루트 경로
 app.get("/", (req, res) => {
     res.send("Hello, RESTful API!");
 });
